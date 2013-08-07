@@ -29,6 +29,7 @@ h1 span {
 	width: calc( 100% / 3 );
 	width: -webkit-calc( 100% / 3 );
 	height: calc( 100% / 5 );
+	height: -webkit-calc( 100% / 5 );
 	color: #111;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -67,6 +68,7 @@ h1 span {
 	height: 50px;
 	position: absolute;
 	top: calc(50% - 12px);
+	top: -webkit-calc(50% - 12px);
 	display: block;
 }
 
