@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
+        <link rel="stylesheet" href="bower_components/open-sans-fontface/open-sans.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
     
@@ -14,13 +15,17 @@
 
         <div class="container">
           <div class="site">
-            <div class="header">
-              <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            </div>
-            
+            <aside>
+            	<img src="img/tete-fallback@2x.png" alt="" />
+				<h2>Le <br> soundboard</h2>
+				<h1>Laurent <br/> <span>Garnier</span></h1>
+				<footer>
+					<p>Crafted by <a href="http://integralstudios.be">▲</a></p>
+				</footer>
+            </aside>
             {{ content }}
-            
 		  </div>
         </div>
+        
     </body>
 </html>
