@@ -1,15 +1,20 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
 html, body, .container, .site {
 	height: 100%;
-	overflow: hidden;
-	font-family: Open Sans;
 	font-weight: 800;
+	font-family: 'Open Sans';
 }
 
 h1, h2 {
-	text-transform: uppercase;
-	color: white;
-	padding-left: 20px;
 	margin: 0;
+	padding-left: 20px;
+	color: white;
+	text-transform: uppercase;
 }
 
 h1 {
@@ -26,50 +31,49 @@ h1 span {
 }
 
 .tile {
-	width: calc( 100% / 3 );
+	position: relative;
+	display: inline-block;
+	margin-right: -4px;
 	width: -webkit-calc( 100% / 3 );
-	height: calc( 100% / 5 );
+	width: calc( 100% / 3 );
 	height: -webkit-calc( 100% / 5 );
+	height: calc( 100% / 5 );
+	background: white;
 	color: #111;
+	vertical-align: middle;
+	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
-	display: inline-block;
-	text-align: center;
-	background: white;
-	vertical-align: middle;
-	margin-right: -4px;
-	box-sizing: border-box;
-	position: relative;
 }
 
 .tile:hover {
 	background: rgb(243,113,41);
-	-webkit-transition: all .3s;
+	/* -webkit-transition: all .3s; */
 	-moz-transition: all .3s;
-	-o-transition: all .3s;
 	-ms-transition: all .3s;
+	-o-transition: all .3s;
 	transition: all .3s;
 }
 
 .tile:hover a {
 	color: white;
-	-webkit-transition: all .3s;
+	/* -webkit-transition: all .3s; */
 	-moz-transition: all .3s;
-	-o-transition: all .3s;
 	-ms-transition: all .3s;
+	-o-transition: all .3s;
 	transition: all .3s;
 } 
 
 .tile a {
-	color: black;
-	cursor: pointer;
-	text-decoration: none;
+	position: absolute;
+	top: -webkit-calc(50% - 12px);
+	top: calc(50% - 12px);
+	display: block;
 	width: 100%;
 	height: 50px;
-	position: absolute;
-	top: calc(50% - 12px);
-	top: -webkit-calc(50% - 12px);
-	display: block;
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
 }
 
 .tile:nth-child(odd) {
@@ -79,54 +83,53 @@ h1 span {
 .tile:nth-child(odd):hover {
 	color: white;
 	background: rgb(243,113,41);
-	-webkit-transition: all .3s;
+	/* -webkit-transition: all .3s; */
 	-moz-transition: all .3s;
-	-o-transition: all .3s;
 	-ms-transition: all .3s;
+	-o-transition: all .3s;
 	transition: all .3s;
 }
 
 .tile:nth-child(odd):hover a {
 	color: white;
-	-webkit-transition: all .3s;
+	/* -webkit-transition: all .3s; */
 	-moz-transition: all .3s;
-	-o-transition: all .3s;
 	-ms-transition: all .3s;
+	-o-transition: all .3s;
 	transition: all .3s;
 }
 
 .tiles {
-	width: 70%;
-	height: 100%;
 	display: inline-block;
+	width: 69.9%;
+	height: 100%;
 }
 
 aside {
+	display: inline-block;
+	margin-right: -4px;
 	width: 30%;
 	height: 100%;
-	margin-right: -4px;
-	display: inline-block;
-	box-sizing: border-box;
 	background: rgb(243,113,41);
 	vertical-align: top;
 }
 
 aside img {
-	width: 175px;
 	display: block;
 	margin: 0 auto;
+	width: 175px;
 }
 
 footer {
-	color: white;
 	position: absolute;
 	bottom: 0px;
 	left: 20px;
+	color: white;
 	font-weight: 200;
 	font-size: .7em;
 }
 
-footer a  {
+footer a {
 	color: white;
 	text-decoration: none;
 }
