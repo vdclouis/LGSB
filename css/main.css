@@ -4,6 +4,10 @@ html, body, .container, .site {
 	font-family: 'Open Sans';
 }
 
+a:active, a:focus {
+  outline: none;
+}
+
 h1, h2 {
 	margin: 0;
 	color: white;
