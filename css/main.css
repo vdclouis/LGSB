@@ -1,5 +1,5 @@
 * {
-	overflow:hidden;
+	overflow-y: scroll;
 }
 html, body, .container, .site {
 	height: 100%;
