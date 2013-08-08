@@ -11,9 +11,9 @@ h1, h2 {
 }
 
 header {
+	display: inline-block;
 	margin-left: calc( 50% - (176px / 2) );
 	margin-left: -webkit-calc( 50% - (176px / 2) );
-	display: inline-block;
 }
 
 h1 {
@@ -80,8 +80,8 @@ h1 span {
 }
 
 .tile:nth-child(odd):hover {
-	color: white;
 	background: rgb(243,113,41);
+	color: white;
 	/* -webkit-transition: all .3s; */
 	-moz-transition: all .3s;
 	-ms-transition: all .3s;
@@ -116,20 +116,21 @@ aside {
 aside img {
 	display: block;
 	margin: 0 auto;
-	width: 175px;
 	padding-top: 20px;
+	width: 175px;
 }
 
 footer {
 	position: absolute;
 	bottom: 0px;
 	left: 20px;
-	color: white;
-	font-weight: 200;
-	font-size: .7em;
-	width: 100px;
 	display: block;
 	padding-bottom: 10px;
+	width: 100px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: .7em;
 }
 
 footer p {
@@ -153,10 +154,10 @@ footer a {
 		margin: 0;
 	}
 	aside img {
-		width: 100px;
-		padding: 20px;
 		display: inline-block;
 		margin: 0;
+		padding: 20px;
+		width: 100px;
 		vertical-align: top;
 	}
 	.tile {
@@ -173,8 +174,8 @@ footer a {
 		margin-top: 50px;
 	}
 	h2 {
-		padding-left: 0;
 		margin-top: 55px;
+		padding-left: 0;
 	}
 	footer {
 		position: relative;
